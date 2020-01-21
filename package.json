@@ -1,0 +1,64 @@
+{
+  "name": "react-ts-ssr",
+  "version": "1.0.0",
+  "description": "A React, TypeScript, Server Side Rendered boilerplate",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Azayzel/react-ts-ssr.git"
+  },
+  "keywords": [
+    "react",
+    "react-typescript",
+    "ssr",
+    "typescript",
+    "express",
+    "tsx"
+  ],
+  "author": "Josh Lavely",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Azayzel/react-ts-ssr/issues"
+  },
+  "homepage": "https://github.com/Azayzel/react-ts-ssr#readme",
+  "scripts": {
+    "start": "node dist/server.js",
+    "build": "webpack --mode production",
+    "watch": "webpack --mode development --watch"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "errorhandler": "^1.5.1",
+    "express": "^4.17.1",
+    "express-jwt": "^5.3.1",
+    "express-session": "^1.17.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.8.9",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0",
+    "path": "^0.12.7",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "styled-components": "^5.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.3",
+    "@types/express": "^4.17.2",
+    "@types/mongoose": "^5.5.41",
+    "@types/node": "^13.1.8",
+    "@types/react": "^16.9.17",
+    "@types/react-dom": "^16.9.5",
+    "@types/styled-components": "^4.4.2",
+    "awesome-typescript-loader": "^5.2.1",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.6",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "source-map": "^0.7.3",
+    "typescript": "^3.7.5",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10",
+    "webpack-node-externals": "^1.7.2"
+  }
+}
