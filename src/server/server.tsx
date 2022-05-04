@@ -7,7 +7,7 @@ import * as path from 'path';
 import * as bodyParser from 'body-parser';
 import * as session from 'express-session';
 import * as errorHandler from 'errorhandler';
-import * as morgan from 'morgan'
+import * as morgan from 'morgan';
 import {renderToString} from 'react-dom/server';
 import {ServerStyleSheet} from 'styled-components'
 import App from '../client/App';
@@ -22,7 +22,7 @@ const base = express();
 
 // Configure base server
 base.use(cors());
-base.use(morgan());
+base.use(morgan("combined"));
 base.use(bodyParser.urlencoded({extended: false}));
 base.use(bodyParser.json());
 base.use(session({ 
